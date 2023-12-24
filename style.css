@@ -41,3 +41,68 @@ form>p,button {
     height: 48px;
     padding: 0rem;
 }
+
+body {
+    background-color: hsla(174, 62%, 47%, 0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5rem 8.7rem;
+}
+
+.Fig {
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    row-gap: 1.88rem;
+}
+
+.Fig.log {
+    grid-column: span 2;
+}
+
+form > p,
+button {
+    grid-column: span 2;
+}
+
+.Fig > input,
+.Fig > select {
+    height: 48px;
+    padding: 0rem;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Fig.log,
+    form > p,
+    button {
+        grid-column: span 1;
+    }
+}
