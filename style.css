@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: auto;
-    height: 100vh;
+    block-size: 100vh;
 }
 
 main {
@@ -38,7 +38,7 @@ form>p,button {
 }
 
 .Fig>input,.Fig>select {
-    height: 48px;
+    block-size: 48px;
     padding: 0rem;
 }
 
@@ -48,7 +48,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: auto;
-    height: 100vh;
+    block-size: 100vh;
 }
 
 main {
@@ -83,13 +83,13 @@ button {
 
 .Fig > input,
 .Fig > select {
-    height: 48px;
+    block-size: 48px;
     padding: 0rem;
 }
 
 /* Media Queries for Responsive Design */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-inline-size: 768px) {
     main {
         padding: 2rem;
     }
@@ -99,7 +99,7 @@ button {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-inline-size: 480px) {
     .Fig.log,
     form > p,
     button {
